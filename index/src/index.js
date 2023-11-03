@@ -1,0 +1,1 @@
+import './exchanger-card/exchanger-card-tabs/exchanger-card-tabs.scss';

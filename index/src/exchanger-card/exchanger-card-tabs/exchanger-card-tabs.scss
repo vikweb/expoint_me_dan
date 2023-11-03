@@ -1,0 +1,28 @@
+.exchanger-card-tabs {
+  --bs-nav-tabs-border-color: #2197d5;
+  padding: 0 0 1px;
+
+  .nav-link {
+    padding: 5px 15px;
+    margin-right: 5px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    background: #7e90b8;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #d1d1d1;
+
+    &:hover {
+      background: #2197d5;
+    }
+    
+    &.active, 
+    .nav-item.show & {
+      color: #000;
+      background: #ebeeff;
+      border-color: #d1d1d1;
+      box-shadow: 3px 1px 2px #c3c2c2;
+    }
+  }
+}

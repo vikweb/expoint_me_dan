@@ -145,17 +145,20 @@ document.addEventListener('DOMContentLoaded', function () {
 <link href="./assets/files/frontend-e3dd27b899036bb016b3f29aef493b47.min.css" rel="stylesheet">
 <link href="./assets/files/frontend-8862cc68222c5989ddbe5108bf751656.min.css" rel="stylesheet" media="only screen and (min-width:992px)">
 <link href="./assets/files/frontend-93a432d539909d8b167e492387f979f0.min.css" rel="stylesheet" media="only screen and (max-width:992px)">
-<link href="./assets/files/homePage-95fd0f5f5dca0bcdd14e94dbd5ae067f.min.css" rel="stylesheet">
-<link href="./assets/files/homePage-53e9375539f36e0183e14264ff83c9dd.min.css" rel="stylesheet" media="only screen and (min-width:992px)">
-<link href="./assets/files/homePage-92a5690cb2d5f9def1ddb6f57428ce13.min.css" rel="stylesheet" media="only screen and (max-width:992px)">
+<!-- <link href="./assets/files/homePage-95fd0f5f5dca0bcdd14e94dbd5ae067f.min.css" rel="stylesheet"> -->
+<!-- <link href="./assets/files/homePage-53e9375539f36e0183e14264ff83c9dd.min.css" rel="stylesheet" media="only screen and (min-width:992px)"> -->
+<!-- <link href="./assets/files/homePage-92a5690cb2d5f9def1ddb6f57428ce13.min.css" rel="stylesheet" media="only screen and (max-width:992px)"> -->
 <link href="./assets/files/table-ab4952d4c01acc8b247ecd11b886072d.min.css" rel="stylesheet">
 <link href="./assets/files/table-54db5a162583c0cf202dc11de27f5d99.min.css" rel="stylesheet" media="only screen and (min-width:992px)">
 <link href="./assets/files/table-8564ee4b93b518aa1de487eaab3ae549.min.css" rel="stylesheet" media="only screen and (max-width:992px)">
-<link href="./assets/files/altcoin-7d653f358fd91b2f765da0aee0c4253a.min.css" rel="stylesheet">
-<link href="./assets/files/altcoin-57cb3f70971a308271adc5b9931dd4bc.min.css" rel="stylesheet" media="only screen and (max-width:992px)">
+<!-- <link href="./assets/files/altcoin-7d653f358fd91b2f765da0aee0c4253a.min.css" rel="stylesheet"> -->
+<!-- <link href="./assets/files/altcoin-57cb3f70971a308271adc5b9931dd4bc.min.css" rel="stylesheet" media="only screen and (max-width:992px)"> -->
 <link href="./assets/files/user-login-popup.css" rel="stylesheet">
 <link href="./assets/files/banners-brief.css" rel="stylesheet">
 <link href="./assets/files/banners-brief-mob.css" rel="stylesheet" media="only screen and (max-width:992px)">
+
+<link href="./dist/style.css" rel="stylesheet">
+
 <script src="./assets/files/jquery.min.js.загрузка"></script>        <script src="./assets/files/optimize.js.загрузка"></script>
                 <script>
       function gtag(){dataLayer.push(arguments);};(function(w,d,s,l,i,gi){  
@@ -1021,11 +1024,32 @@ const sendToGTM = obj => {
          
         <!-- layouts-main -->
         <div id="content" class="preload-content overflow-hidden pt-3 px-xl-4 px-3 col-lg-8 col-12">
-        
-                 
-        <div id="vw-content-title" class="d-flex align-items-baseline flex-column flex-lg-row" data-variant="1">
-            <h1 class="fs-4 mb-3 fw-bold">Мониторинг обменников</h1>
-        </div>
+
+            <div class="mb-5">
+                <h1 itemprop="name" class="fs-2 fw-bold mb-1">Обменник BTCSale</h1>
+                
+                <p class="m-0 d-flex align-items-baseline gap-2 wrap-badge">
+                    <sup class="badge bg-success text-uppercase fw-bolder">https</sup>
+
+                    <span data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-html="true" data-bs-content="Обменный пункт прошел верификацию" class="data-badge data-badge_param_verified"></span>
+
+                    <span data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-html="true" data-bs-content="Обменник поддерживает <b>Повышенный Кешбэк</b>.<br/>Вернем вам <b>35%</b> с нашей прибыли по данному обмену.<br/>Подробнее в профиле на странице кешбэка" class="data-badge data-badge_have_cashback data-badge_const-2"></span>
+                </p>
+            </div>
+
+            <ul class="nav nav-tabs mb-5 exchanger-card-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tabReviewsNav" data-bs-toggle="tab" data-bs-target="#tabReviews" type="button" role="tab" aria-selected="true">Отзывы</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tabReservesNav" data-bs-toggle="tab" data-bs-target="#tabReserves" type="button" role="tab" aria-selected="false">Резервы</button>
+                </li>
+            </ul>
+
+            <div class="tab-content mb-5">
+                <div class="tab-pane show active" id="tabReviews" role="tabpanel" aria-labelledby="tabReviewsNav">Отзывы</div>
+                <div class="tab-pane" id="tabReserves" role="tabpanel" aria-labelledby="tabReservesNav">Резервы</div>
+            </div>
 
         
         <div id="vw-content-body-head" data-variant="1"> 
@@ -1034,7 +1058,8 @@ const sendToGTM = obj => {
              
         </div>
 
-        <h2>Общие вопросы</h2><div class="wrap-faq accordion" id="content-faq-index">
+        <h2 class="fs-4">Вопросы по отзывам</h2>
+        <div class="wrap-faq accordion" id="content-faq-index">
     <!-- first question -->
     <div itemscope="" itemtype="https://schema.org/Question">
         <div class="item-question">
@@ -1243,9 +1268,18 @@ const sendToGTM = obj => {
 <script src="./assets/files/frontend-b741e1d1bb3a2fc62195b5575ff73d07.min.js.загрузка" data-media="only screen and (min-width:992px)"></script>
 <script src="./assets/files/frontend-dfe66898685ef74a30faed90fea8821f.min.js.загрузка" data-media="only screen and (max-width:992px)"></script>
 <script src="./assets/files/vlt_list.json.js.загрузка" data-plugin="vlt_list"></script>
-<script src="./assets/files/homePage-8169ecc8885ea4e92fac1d5d25c1d26d.min.js.загрузка"></script>
-<script src="./assets/files/homePage-f2604a262dc127c179a63cbe5813becd.min.js.загрузка" data-media="only screen and (max-width:992px)"></script>
+<!-- <script src="./assets/files/homePage-8169ecc8885ea4e92fac1d5d25c1d26d.min.js.загрузка"></script> -->
+<!-- <script src="./assets/files/homePage-f2604a262dc127c179a63cbe5813becd.min.js.загрузка" data-media="only screen and (max-width:992px)"></script> -->
 <script src="./assets/files/table-0e19cce7e7e6f2335fbb3c2292236edb.min.js.загрузка"></script>
+
+
+<script>
+    // $('[data-bs-toggle="tooltip"]').tooltip();
+//     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+// var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+//   return new bootstrap.Tooltip(tooltipTriggerEl)
+// })
+</script>
 <script src="./assets/files/altcoin-30ed8232b63603a2620f9d4dc4981148.min.js.загрузка"></script>
 <script src="./assets/files/user-login-popup.js.загрузка"></script>
 <script src="./assets/files/banners-brief.js.загрузка"></script>
