@@ -1,0 +1,45 @@
+#obmen_calculator {
+  background: #f2f4f7;
+  background: -moz-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: -webkit-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: -o-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: -ms-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: linear-gradient(to top, #f2f4f7 0%, #fff 100%);
+}
+#obmen_calculator #giveRadio + label, #obmen_calculator #getRadio + label {
+  font-size: 14px;
+  vertical-align: text-bottom;
+  margin-left: 5px;
+}
+#obmen_calculator #getBlock {
+  display: none;
+}
+#obmen_calculator #getBlock .number-vlt {
+  white-space: nowrap;
+}
+#obmen_calculator #giveBlock {
+  display: block;
+}
+#obmen_calculator #giveBlock .number-vlt {
+  white-space: nowrap;
+}
+#obmen_calculator #getVal, #obmen_calculator #giveVal {
+  max-width: 100px;
+}
+#obmen_calculator #getVal .number-vlt, #obmen_calculator #giveVal .number-vlt {
+  white-space: nowrap;
+}
+#obmen_calculator .col-aside {
+  width: 100%;
+}
+#obmen_calculator .field-number input[type=text] {
+  min-width: 90px;
+}
+#obmen_calculator .block-obmen .block-radio-direct {
+  line-height: 1.25;
+}
+#obmen_calculator .form-check-input:focus {
+  box-shadow: none !important;
+}
+
+/*# sourceMappingURL=vw-content-calculator-mob.css.map */

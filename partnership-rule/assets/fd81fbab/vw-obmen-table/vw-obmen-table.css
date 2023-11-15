@@ -1,0 +1,42 @@
+#obmen-table #exchangesTable tr.favorite-row .green-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #42b72a;
+}
+#obmen-table #exchangesTable tr.favorite-row .name-table {
+  font-weight: 700;
+}
+#obmen-table #exchangesTable tr.favorite-row .name-table:after {
+  content: "";
+  position: relative;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-left: 1em;
+  vertical-align: -1px;
+  background-image: url(images/icon-hand-thumbs-up.svg);
+}
+#obmen-table #exchangesTable tr.alert,
+#obmen-table #exchangesTable tr.alert-row {
+  color: #cbcbd6;
+}
+#obmen-table #exchangesTable tr.alert .currency, #obmen-table #exchangesTable tr.alert:hover .currency sub,
+#obmen-table #exchangesTable tr.alert .text-green,
+#obmen-table #exchangesTable tr.alert .text-red,
+#obmen-table #exchangesTable tr.alert-row .currency,
+#obmen-table #exchangesTable tr.alert-row:hover .currency sub,
+#obmen-table #exchangesTable tr.alert-row .text-green,
+#obmen-table #exchangesTable tr.alert-row .text-red {
+  color: #cbcbd6;
+}
+#obmen-table #exchangesTable tr.alert .inner-table .data-badge,
+#obmen-table #exchangesTable tr.alert .btn-info,
+#obmen-table #exchangesTable tr.alert-row .inner-table .data-badge,
+#obmen-table #exchangesTable tr.alert-row .btn-info {
+  opacity: 0.2;
+}
+
+/*# sourceMappingURL=vw-obmen-table.css.map */

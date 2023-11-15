@@ -1,0 +1,51 @@
+#obmen_calculator{
+  background: #f2f4f7;
+  background: -moz-linear-gradient( top, #f2f4f7 0%, #fff 100%);
+  background: -webkit-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: -o-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: -ms-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: linear-gradient( to top, #f2f4f7 0%, #fff 100%);
+
+
+  #giveRadio + label, #getRadio + label{
+    font-size: 14px;
+    vertical-align: text-bottom;
+    margin-left: 5px;
+  }
+  #getBlock{
+    display: none;
+    .number-vlt{
+      white-space: nowrap;
+    }
+  }
+  #giveBlock{
+    display: block;
+    .number-vlt{
+      white-space: nowrap;
+    }
+  }
+  #getVal, #giveVal{
+    max-width: 100px;
+    .number-vlt{
+      white-space: nowrap;
+    }
+  }
+  .col-aside{
+    width: 100%;
+  }
+  .field-number{
+    input[type="text"]{
+      min-width: 90px;
+    }
+  }
+  .block-obmen{
+    .block-radio-direct{
+      line-height: 1.25;
+    }
+  }
+  .form-check-input {
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}

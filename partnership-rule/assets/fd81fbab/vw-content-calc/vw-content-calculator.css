@@ -1,0 +1,145 @@
+#obmen_calculator {
+  background: #f2f4f7;
+  background: -moz-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: -webkit-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: -o-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: -ms-linear-gradient(top, #f2f4f7 0%, #fff 100%);
+  background: linear-gradient(to top, #f2f4f7 0%, #fff 100%);
+  border: 1px solid #dfe3e9;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 0 0 20px;
+  overflow: hidden;
+  padding: 15px 15px 5px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#obmen_calculator input[type=text] {
+  padding: 6px 14px;
+  height: 38px;
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0 0 10px;
+  border-width: 1px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-weight: normal;
+}
+#obmen_calculator .block-radio-direct {
+  cursor: pointer;
+}
+#obmen_calculator .col-label {
+  float: left;
+  margin: 1px 21px 0 0;
+}
+#obmen_calculator .field-number {
+  float: left;
+  width: 100px;
+  margin: 5px 13px 0 0;
+}
+#obmen_calculator .field-number input[type=text] {
+  margin-bottom: 10px;
+  width: auto;
+}
+#obmen_calculator .label-field {
+  float: left;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  margin: 11px 8px 10px 0;
+}
+#obmen_calculator .col-aside {
+  float: right;
+}
+#obmen_calculator .col-aside .btn {
+  float: right;
+  width: 150px;
+  margin: 0 0 10px;
+}
+#obmen_calculator .inner-form {
+  float: left;
+  width: 50%;
+}
+#obmen_calculator .inner-form .block-radio-direct {
+  line-height: 1.5;
+}
+#obmen_calculator .material-check {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 5px 10px 5px 5px;
+  width: 32px;
+  height: 14px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.38);
+  cursor: pointer;
+  -webkit-transition: background-color 90ms cubic-bezier(0.4, 0, 0.2, 1), border-color 90ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 90ms cubic-bezier(0.4, 0, 0.2, 1), border-color 90ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 90ms cubic-bezier(0.4, 0, 0.2, 1), border-color 90ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#obmen_calculator .material-check:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  top: -4px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  background-color: #fff;
+  border: 10px solid #fff;
+  transform: translateX(0);
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#obmen_calculator .col-aside .hold-select {
+  overflow: visible;
+  width: 200px;
+  margin: 8px 20px 10px 0;
+  position: relative;
+}
+#obmen_calculator .hold-select {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#obmen_calculator .hold-select label {
+  margin-left: 12px;
+  margin-top: 3px;
+}
+#obmen_calculator .form-switch .form-check-input {
+  width: 3rem;
+  height: 1.5rem;
+}
+#obmen_calculator .form-check-input:focus {
+  box-shadow: none !important;
+}
+#obmen_calculator .form-check-input:hover {
+  cursor: pointer;
+}
+#obmen_calculator #giveRadio + label, #obmen_calculator #getRadio + label {
+  font-size: 14px;
+  vertical-align: text-bottom;
+  margin-left: 5px;
+  font-weight: 400;
+}
+#obmen_calculator #getBlock input, #obmen_calculator #giveBlock input {
+  max-width: 100px;
+  border: 1px solid;
+}
+#obmen_calculator #getBlock .number-vlt, #obmen_calculator #giveBlock .number-vlt {
+  white-space: nowrap;
+  margin-bottom: 17px;
+}
+
+/*# sourceMappingURL=vw-content-calculator.css.map */

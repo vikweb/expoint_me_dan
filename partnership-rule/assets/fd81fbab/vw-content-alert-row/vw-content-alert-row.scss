@@ -1,0 +1,46 @@
+//* exSumo Модальный алерт о переходе */
+#go-alert-row-modal {
+    label {
+        cursor: pointer;
+    }
+    //* Checkbox functionality */
+    input[type="checkbox"]+label .label-checkbox {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        flex: 0 0 20px;
+        vertical-align: -webkit-baseline-middle;
+        border: 1px solid #BFCED9;
+        border-radius: 2px;
+        //  background: #fff;
+    }
+    input[type="checkbox"]:checked+label .label-checkbox {
+        background: #42B72A;
+        border-color: #42B72A;
+    }
+    input[type="checkbox"]:checked+label .label-checkbox:after {
+        content: '';
+        position: absolute;
+        display: block;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        width: 10px;
+        height: 6px;
+        transform: rotate(-45deg);
+        margin: 4px 3px;
+    }
+    .label-checkbox+span {
+        white-space: initial;
+        min-width: initial;
+        font-size: 0.9rem;
+    }
+    .btn-primary {
+        background: #537dd6;
+    }
+    .btn-secondary {
+        background: none;
+        color: var(--bs-body-color);
+    }
+}

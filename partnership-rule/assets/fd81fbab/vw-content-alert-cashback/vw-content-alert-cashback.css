@@ -1,0 +1,25 @@
+#go-alert-cashback-modal a {
+  color: #537dd6;
+  cursor: pointer;
+}
+#go-alert-cashback-modal a:hover {
+  text-decoration: underline;
+}
+#go-alert-cashback-modal article {
+  justify-content: center;
+  padding: 0 1.6em;
+  color: #545454;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  word-wrap: break-word;
+}
+#go-alert-cashback-modal .modal-header {
+  padding-left: 4em;
+}
+#go-alert-cashback-modal .modal-title {
+  margin: auto;
+}
+
+/*# sourceMappingURL=vw-content-alert-cashback.css.map */

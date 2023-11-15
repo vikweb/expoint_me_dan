@@ -1,0 +1,25 @@
+#obmen-table {
+  margin-left: -17px;
+  margin-right: -17px;
+}
+#obmen-table #exchangesTable .list-group-custom .currency-block .currency-limits {
+  display: none;
+}
+#obmen-table #exchangesTable .list-group-custom td.cell.cell-rezerv {
+  font-size: 11px;
+}
+#obmen-table #exchangesTable .list-group-custom td.cell.cell-rezerv .txt-limit, #obmen-table #exchangesTable .list-group-custom td.cell.cell-rezerv .txt-reserv {
+  color: #81899f;
+  font-size: 11px;
+}
+#obmen-table #exchangesTable .list-group-custom td.cell.cell-comments .block-reviews .text-left.text-red {
+  font-size: 14px;
+}
+#obmen-table #exchangesTable .list-group-custom td.cell.cell-comments .block-reviews .text-right.text-green {
+  font-size: 14px;
+}
+#obmen-table #exchangesTable .list-group-custom td.cell.cell-get span, #obmen-table #exchangesTable .list-group-custom td.cell.cell-give span {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=vw-obmen-table-mob.css.map */

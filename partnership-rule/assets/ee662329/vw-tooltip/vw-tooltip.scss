@@ -1,0 +1,289 @@
+.tooltipster-base {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.wrap-tooltip {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    cursor: default;
+    .button-info {
+        display: inline-block;
+        vertical-align: top;
+        width: 20px;
+        height: 20px;
+        background-image: url(images/icons/icn_info_new.svg);
+        background-size: 20px 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: transparent;
+        background-color: transparent;
+    }
+    .tooltip {
+        position: absolute;
+        top: -29px;
+        left: 100%;
+        z-index: 10;
+        width: 304px;
+        padding: 0 0 0 26px;
+        white-space: normal;
+        display: none;
+        pointer-events: none;
+        opacity: initial;
+        .info-row {
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 1px solid #e1e2e4;
+            color: #283346;
+            margin: 0;
+            dt,
+            dd {
+                float: left;
+                width: 50%;
+                margin: 0;
+                padding: 4px 10px 4px 0;
+                position: relative;
+                line-height: 16px;
+                font-size: 13px;
+                font-weight: 500;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            dd {
+                padding-left: 12px;
+                padding-right: 0;
+                font-weight: 400;
+            }
+        }
+        .rating-star {
+            margin: 0 15px 5px 3px;
+            float: right;
+        }
+    }
+    &:hover {
+        .tooltip {
+            display: block;
+            pointer-events: all;
+        }
+    }
+    .rating-star {
+        width: 100px;
+        overflow: hidden;
+        margin: 0 0 5px;
+        position: relative;
+        height: 16px;
+        .list-star {
+            width: 100%;
+            height: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size: 0;
+            line-height: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            li.star {
+                margin: 0 5px 0 0;
+                display: inline-block;
+                vertical-align: top;
+                background: url(images/bg-rating-gray.png) 0 0 no-repeat;
+                background-size: contain;
+                width: 16px;
+                height: 16px;
+                text-indent: -9999px;
+            }
+            &.star-active {
+                z-index: 3;
+            }
+            &.star-active li.star {
+                background-image: url(images/bg-rating.png);
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.tooltip-info {
+    float: left;
+    margin: -2px 0 0 -25px;
+    .tooltip {
+        .tooltip-inner {
+            border-radius: 12px;
+            box-sizing: border-box;
+            border: 2px solid #537dd6;
+            padding: 10px 15px 5px;
+            background: #fff;
+            position: relative;
+            box-shadow: 0 0 20px rgba(29, 84, 123, .34);
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                left: -22px;
+                top: 30px;
+                border-top: 0 solid transparent;
+                border-bottom: 21px solid transparent;
+                border-right: 20px dashed #537dd6;
+                z-index: 2;
+            }
+            &:after {
+                border-bottom: 17px solid transparent;
+                border-right: 18px dashed #fff;
+                left: -18px;
+                top: 32px;
+                z-index: 3;
+            }
+        }
+    }
+    .head-tooltip {
+        display: block
+    }
+    .head-tooltip {
+        display: flex;
+        justify-content: space-between
+    }
+    .title-tooltip {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        font-style: italic;
+        margin: 0 3px 3px 0;
+        a {
+            color: #3785d0;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .btn-info {
+        display: inline-block;
+        vertical-align: top;
+        width: 20px;
+        height: 20px;
+        background-image: url(images/icons/icn_info_new.svg);
+        background-size: 20px 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: transparent;
+        background-color: transparent;
+        border-color: transparent;
+    }
+    .tooltip-inner {
+        max-width: 304px;
+        text-align: left;
+    }
+}
+
+.wrap-badge {
+    z-index: 1;
+    margin: -1px 0 0 3px;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+
+/* icons */
+
+.wrap-badge,
+.tooltip-legend {
+    .data-badge {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0 0 1px;
+        text-align: center;
+        color: #3c5999;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        vertical-align: middle;
+    }
+    .data-badge_favorite,
+    .data-badge__favorite {
+        background-image: url(images/icons/icn_favorite.svg);
+    }
+    .data-badge_have_cashback {
+        background-image: url(images/icons/icn_have_cashback2.svg);
+    }
+    .data-badge_have_cashback.data-badge_const-2 {
+        background-image: url(images/icons/icn_have_cashback1.svg);
+    }
+    .data-badge_param_manual {
+        background-image: url(images/icons/icn_manual.svg);
+    }
+    .data-badge_param_cardverify {
+        background-image: url(images/icons/icn_cardverify.svg);
+    }
+    .data-badge_param_verified {
+        background-image: url(images/icons/icn_verified.svg);
+    }
+    .data-badge_param_verifying {
+        background-image: url(images/icons/icn_verifying.svg);
+    }
+    .data-badge_param_floating {
+        background-image: url(images/icons/icn_floating.svg);
+    }
+    .data-badge_param_is_wallet {
+        background-image: url(images/icons/icn_wallet.svg);
+    }
+    .data-badge_param_is_mediator {
+        background-image: url(images/icons/icn_is_mediator.svg);
+    }
+    .data-badge_param_reg_need {
+        background-image: url(images/icons/icn_reg_need.svg);
+    }
+    .data-badge_param_juridical {
+        background-image: url(images/icons/icn_juridical.svg);
+    }
+    .data-badge__confirmed {
+        background-image: url(images/icons/icn_confirmed.svg);
+    }
+    .data-badge_minfee {
+        background-image: url(images/icons/icn_minfee.svg);
+    }
+    .data-badge_param_is_cities {
+        background-image: url(images/icons/icn_is_cities.svg);
+    }
+    .data-badge_param_stock_text {
+        background-image: url(images/icons/icn_gifts.png);
+    }
+}
+
+.wrap-badge,
+.inner-table,
+.tooltip-legend {
+    .tooltip-gifts {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        margin-right: .1em;
+        vertical-align: -4px;
+        // background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB4SURBVHgB7ZJfCoAgDMZXdAR7r1PNI7pT5XvdwYwKUmTNiIzoBz7MfX64PwAlGRHdcjhNDTfDGkp+lGX4CqpjMCEOvr4uFilj1rzWKQOriPo9DkpOmZ0RvynTQ7ch0TbxBbcmqVxLFMzh2cX+Da8Z+jFaEJKj/TAzsgEoCIJnKA8AAAAASUVORK5CYII=");
+        background-image: url(images/icons/icn_gifts.png);
+    }
+}
+
+table .disabled td>.inner-table .wrap-badge {
+    opacity: .45;
+}
+
+tr:hover .tooltip .data-badge {
+    mix-blend-mode: normal;
+    margin-top: 3px;
+}
